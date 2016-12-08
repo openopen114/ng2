@@ -1,0 +1,10 @@
+<p>
+  inside works!
+</p>
+
+<input type="text" #insideInput (keyup)="showText(insideInput.value)">
+
+
+<p>insdie text: {{insideText}}</p>
+<p>input test form AppComp: {{inputText}}</p>
+<button (click)="outputTest2App(insideInput.value)"> send text to AppComp</button>

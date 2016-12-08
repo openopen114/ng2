@@ -1,0 +1,12 @@
+<h1>
+  {{title}}
+</h1>
+
+<input type="text" #appForm (keyup)="showText(appForm.value)">
+
+<p>appFormText: {{appFormText}}</p>
+<p>Inside Comp out text: {{insideOutputText}}</p>
+<h2>slice 2 - 4: {{name | '2' : '4'}}</h2>
+
+
+<app-inside [inputText]="appFormText" (emitSpot)="InsideCompOutputText($event)"></app-inside>
